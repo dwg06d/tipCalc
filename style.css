@@ -1,5 +1,5 @@
 body {
-	background-color: #001f4f;
+	background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
 	font-family: "Raleway", sans-serif;
 }
 
@@ -20,7 +20,7 @@ h1 {
 	top: -60px;
 	width: 300px;
 	transform: translateX(-50%);
-	background-color: #ff851b;
+	background-color: #001f4f;
 	color: #fff;
 	font-weight: 100;
 	border-top-left-radius: 20px;
@@ -56,11 +56,12 @@ button {
 	margin: 20px auto;
 	width: 150px;
 	height: 50px;
-	background-color: #39cccc;
+	background-color: #001f4f;
 	color: #fff;
 	font-size: 16px;
 	border: none;
 	border-radius: 5px;
+	
 }
 
 .tip {
