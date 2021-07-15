@@ -28,6 +28,7 @@ function calculateTip() {
 		return;
 	}
 
+
 	//now we are checking number of persons
 	if (persons === '1')
 	//if there is only one person then we need not to display each.
@@ -47,34 +48,3 @@ function calculateTip() {
 	document.querySelector('#total').innerHTML = total;
 }
 
-
-// Get the modal
-let modal = document.querySelector("myModal");
-
-// Get the button that opens the modal
-let btn = document.querySelector("calculate");
-
-// Get the <span> element that closes the modal
-let span = document.querySelector("close")[0];
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
- }
-
-
- $('.span').click(function() { 
-	window.location.reload();
-});
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
