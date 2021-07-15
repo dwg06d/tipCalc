@@ -20,7 +20,14 @@ function calculateTip() {
 	if (amount === '' && service === 'Select') {
 		alert("Please enter valid values");
 		return;
+	} else if (isNaN(amount)) {
+		alert("Please enter valid dollar amounts");
+		return;
+	} else if (isNaN(persons)) {
+		alert("Please enter numerical values only");
+		return;
 	}
+
 
 	//now we are checking number of persons
 	if (persons === '1')
@@ -40,3 +47,4 @@ function calculateTip() {
 	document.querySelector('.tip').style.display = 'block';
 	document.querySelector('#total').innerHTML = total;
 }
+
