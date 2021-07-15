@@ -26,6 +26,9 @@ function calculateTip() {
 	} else if (isNaN(persons)) {
 		alert("Please enter numerical values only");
 		return;
+	} else if (amount === '' && persons === '') {
+		alert("Please do not leave fields blank.");
+		return;
 	}
 
 

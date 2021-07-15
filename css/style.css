@@ -2,22 +2,22 @@ body {
 	background: url(https://cdn-media-1.freecodecamp.org/imgr/MJAkxbh.png);
 	font-family: "Raleway", sans-serif;
 }
-
+/*
 .container {
 	width: 350px;
 	height: 500px;
 	background-color: #fff;
 	position: absolute;
-	left: 50%;
+	left: 60%;
 	top: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	border-radius: 20px;
 }
-
+*/
 h1 {
 	position: absolute;
-	left: 50%;
-	top: -60px;
+	left: 25%;
+	top: -60;
 	width: 300px;
 	transform: translateX(-50%);
 	background-color: #001f4f;
