@@ -1,108 +1,50 @@
-<!doctype html>
-<html lang="en">
-
+<html>
+  
 <head>
-    <title>PageTitle</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Tip Calc</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    
-    
-    <link rel="stylesheet" href="/css/page.css">
-    <!-- Convert this to an external style sheet -->
-    
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="app.js" defer async></script>
 </head>
-
+  
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Tip Calculator</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">The Code</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <div class="container">
+        <h1>TIP CALCULATOR</h1>
+        <div class="wrapper">
+              
+<p>Bill Amount</p>
+  
+            <input type="text" id="amount" 
+                   placeholder="Amount to be paid"> $
+  
+              
+<p>How was the service ?</p>
+  
+            <select id="services">
+                <option selected disabled hidden>
+                    Select
+                </option>
+                <option value="0.25">25% - Top Notch</option>
+                <option value="0.20">20% - Excellent</option>
+                <option value="0.15">15% - Good</option>
+                <option value="0.10">10% - Bad</option>
+                <option value="0.05">5% - Worst</option>
+            </select>
+  
+              
+<p>Total number of persons</p>
+  
+            <input type="text" id="persons"
+                placeholder="Number of people sharing the bill">
+            <button id="calculate">Calculate</button>
         </div>
-    </nav>
-    <!-- ======= Hero Section ======= -->
-    <main id="hero">
-        <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <div class="container col-xxl-8 px-4 py-5">
-                        <h1>TIP CALCULATOR</h1>
-                        <div class="wrapper">
-                              
-                            <p>Bill Amount</p>
-                  
-                            <input type="text" id="amount" 
-                                   placeholder="Amount to be paid"> $
-                  
-                              
-                            <p>How was the service ?</p>
-                  
-                            <select id="services">
-                                <option selected disabled hidden>
-                                    Select
-                                </option>
-                                <option value="0.25">25% - Top Notch</option>
-                                <option value="0.20">20% - Excellent</option>
-                                <option value="0.15">15% - Good</option>
-                                <option value="0.10">10% - Bad</option>
-                                <option value="0.05">5% - Worst</option>
-                            </select>
-                  
-                              
-                            <p>Total number of persons</p>
-                  
-                            <input type="text" id="persons"
-                                placeholder="Number of people sharing the bill">
-                            <button id="calculate">Calculate</button>
-                        </div>
-                  
-                        <div class="tip">
-                              
-                            <p>Tip Amount</p>
-                  
-                            $<span id="total">0</span>
-                            <span id="each">each</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Never Guess The Tip Again!!!</h1>
-                    <p class="lead">A simple and fast tip calulating app that will let you figure out the tip for a bill and how much each person will pay.
-                    </p>
-                    
-                </div>
-                
-            </div>
+  
+        <div class="tip">
+              
+<p>Tip Amount</p>
+  
+            $<span id="total">0</span>
+            <span id="each">each</span>
         </div>
-    </main>
-    
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
-    </script>
-    <script src="/js/app.js"></script>
+    </div>
 </body>
-
+  
 </html>
